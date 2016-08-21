@@ -8,6 +8,10 @@ void print_int(int a) {
 }
 
 void print_int2(int a, int b) {
-	printf("%d -- %d\n", a, b);
+	const char * const BN = "----------\n";
+	printf(BN);
+	print_int(a);
+	print_int(b);
+	printf(BN);
 }
 
